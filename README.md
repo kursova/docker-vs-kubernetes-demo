@@ -1,6 +1,4 @@
-from pathlib import Path
 
-readme_en_content = """\
 # Flask + Redis Application with Docker and Kubernetes
 
 This project demonstrates a simple web application using Flask and Redis, deployed first via Docker and then on Kubernetes.
@@ -104,18 +102,3 @@ Hello! This page has been visited X times.
 ├── redis-deployment.yaml
 └── redis-service.yaml
 ```
-
----
-
-## ✅ To Do
-
-- [ ] Add Helm chart support  
-- [ ] Integrate with CI/CD pipeline  
-- [ ] Add Kubernetes ingress  
-"""
-
-# Write to README.en.md
-readme_en_path = Path("README.en.md")
-readme_en_path.write_text(readme_en_content)
-
-"README.en.md file has been created."
